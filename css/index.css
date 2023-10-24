@@ -126,7 +126,7 @@ body {
 /* For Home section */
 #home {
     background-color: var(--light-dark);
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 .imageContainerBg {
@@ -169,7 +169,8 @@ body {
     padding: 50px;
     background: var(--light-white);
     text-align: center;
-
+    position: relative;
+    bottom: 50px;
 }
 
 .titleHeadre {
@@ -669,6 +670,10 @@ body {
     }
 
     /* menu section */
+    #menu{
+        position: relative;
+        bottom: 0;
+    }
     .AllFoods>div {
         display: block
     }
@@ -794,6 +799,10 @@ body {
     }
 
     /* Menu section */
+    #menu{
+        position: relative;
+        bottom: 0;
+    }
     .AllFoods>div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
