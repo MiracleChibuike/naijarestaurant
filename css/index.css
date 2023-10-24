@@ -1,0 +1,834 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ROOT COLOR SELECTOR */
+
+:root {
+    --light-dark: rgba(20, 18, 18, 0.808);
+    --main-dark-primary: #0e0d0d;
+    --light-white: #e0d4d4;
+    --orange-main: #ffa500;
+    --white-main-color: #fff;
+    --gray-semi: rgb(200, 200, 200, 0.732);
+
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
+}
+
+/* styling for the menu container */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background: var(--light-dark);
+    padding-top: 10px;
+    color: var(--white-main-color);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    margin: 5px;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+/* styling for nav-links */
+.nav-links {
+    font-size: 18px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links ul li {
+    padding: 15px;
+}
+
+.nav-links ul li:hover {
+    color: var(--orange-main);
+    transition: all .3s;
+    transform: scale(1.1, 1.0);
+    cursor: pointer;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--white-main-color);
+}
+
+.nav-links ul li a:hover {
+    color: var(--orange-main);
+}
+
+.navButtons {
+    display: none;
+}
+
+#closeNavs,
+#openNavs {
+    font-size: 30px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#openNavs:hover {
+    color: var(--orange-main);
+    transition: all .3s;
+    transform: scale(1.1, 1.0);
+    cursor: pointer;
+}
+
+#closeNavs {
+    display: none;
+    animation-name: triangle;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes triangle {
+    0% {
+        transform: rotate(0);
+        transition: all .2s ease-in-out;
+    }
+
+    25%,
+    50%,
+    100% {
+        transform: rotate(180deg);
+        transition: all .2s ease-in-out;
+    }
+}
+
+#closeNavs:hover {
+    color: var(--orange-main);
+    transition: all .3s;
+    transform: scale(1.1, 1.0);
+    cursor: pointer;
+}
+
+/* For Home section */
+#home {
+    background-color: var(--light-dark);
+    min-height: 100vh;
+}
+
+.imageContainerBg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backgroundImg {
+    position: relative;
+    top: 200px;
+}
+
+
+.carousel {
+    color: var(--white-main-color);
+}
+
+.carouselContainer {
+    margin: 50px;
+    position: relative;
+    bottom: 100px;
+}
+
+.carouselContainer h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.orderBtn {
+    color: var(--white-main-color);
+    border: 2px solid var(--orange-main);
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    background: var(--orange-main);
+}
+
+/* Menu Section */
+
+#menu {
+    padding: 50px;
+    background: var(--light-white);
+    text-align: center;
+
+}
+
+.titleHeadre {
+    font-size: 2.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.foodsContent button {
+    margin: 10px;
+    border: none;
+    background: transparent;
+}
+
+#forAllFoods {
+    background: var(--light-dark);
+    color: var(--white-main-color);
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.foodsContent button:hover {
+    text-decoration: underline;
+}
+
+.foodNames {
+    text-align: center;
+}
+
+.cardsforFood {
+    margin-top: 50px;
+    text-align: center;
+    visibility: visible;
+}
+
+.cardsforFood .foodcard1:hover,
+.foodcard2:hover,
+.foodcard3:hover,
+.foodcard4:hover,
+.foodcard5:hover,
+.foodcard6:hover,
+.foodcard7:hover, .foodcard8:hover, .foodcard9:hover, .foodcard10:hover, .foodcard11:hover, .foodcard12:hover {
+    cursor: pointer;
+    transform: translateY(15px);
+    transition: all .7s ease-in-out;
+}
+
+.AllFoods {
+    text-align: center;
+}
+
+.AllFoods>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    color: var(--white-main-color);
+    row-gap: 50px;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: 1;
+    content-visibility: visible;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scale(0);
+        transition: all .5s;
+    }
+
+    25%,
+    50%,
+    100% {
+        transform: scale(0.9, 0.9);
+        transition: all .5s;
+    }
+}
+
+.AllFoods img {
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--orange-main);
+    border-radius: 50%;
+}
+
+.foodcard1,
+.foodcard2,
+.foodcard3,
+.foodcard4,
+.foodcard5,
+.foodcard6,
+.foodcard7,
+.foodcard8, .foodcard9, .foodcard10, .foodcard11, .foodcard12{
+    background-color: var(--main-dark-primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.cardup {
+    text-align: center;
+    background: var(--white-main-color);
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0, 0, 25px var(--main-dark-primary);
+    position: relative;
+    bottom: 5px;
+}
+
+.cardDown {
+    padding: 20px;
+    font-size: 15px;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.fa-cart-plus {
+    background: var(--orange-main);
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Styling for Egusi soup Section */
+.EgusiSoupSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    color: var(--white-main-color);
+    row-gap: 50px;
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content-visibility: hidden;
+}
+
+@keyframes dance {
+    0% {
+        transform: scale(0);
+        transition: all .5s;
+    }
+
+    25%,
+    50%,
+    100% {
+        transform: scale(0.9, 0.9);
+        transition: all .5s;
+    }
+}
+
+.EgusiSoupSection img {
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--orange-main);
+    border-radius: 50%;
+}
+
+.Egusi1,
+.Egusi2,
+.Egusi3 {
+    background-color: var(--main-dark-primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Egusi1:hover,
+.Egusi2:hover,
+.Egusi3:hover {
+    cursor: pointer;
+    transform: translateY(15px);
+    transition: all .7s ease-in-out;
+}
+
+.cardupEgusi {
+    text-align: center;
+    background: var(--white-main-color);
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0, 0, 25px var(--main-dark-primary);
+    position: relative;
+    bottom: 5px;
+}
+
+.cardDownEgusi {
+    padding: 20px;
+    font-size: 15px;
+}
+
+/* styling for the Okro Soup Section */
+
+.okroSoupSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    color: var(--white-main-color);
+    row-gap: 50px;
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content-visibility: hidden;
+}
+
+.okroSoupSection img {
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--orange-main);
+    border-radius: 50%;
+}
+
+.Okro1,
+.Okro2,
+.Okro3,
+.Okro4 {
+    background-color: var(--main-dark-primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Okro1:hover,
+.Okro2:hover,
+.Okro3:hover,
+.Okro4:hover {
+    cursor: pointer;
+    transform: translateY(15px);
+    transition: all .7s ease-in-out;
+}
+
+.cardupOkro {
+    text-align: center;
+    background: var(--white-main-color);
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0, 0, 25px var(--main-dark-primary);
+    position: relative;
+    bottom: 5px;
+}
+
+.cardDownOkro {
+    padding: 20px;
+    font-size: 15px;
+}
+
+/* Styling for Amala & Ewedu Food Section */
+.AmalaFoodsSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    color: var(--white-main-color);
+    row-gap: 50px;
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content-visibility: hidden;
+}
+
+.AmalaFoodsSection img {
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--orange-main);
+    border-radius: 50%;
+}
+
+.Amala1,
+.Amala2 {
+    background-color: var(--main-dark-primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Amala1:hover,
+.Amala2:hover {
+    cursor: pointer;
+    transform: translateY(15px);
+    transition: all .7s ease-in-out;
+}
+
+.cardupAmala {
+    text-align: center;
+    background: var(--white-main-color);
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0, 0, 25px var(--main-dark-primary);
+    position: relative;
+    bottom: 5px;
+}
+
+.cardDownAmala {
+    padding: 20px;
+    font-size: 15px;
+}
+
+/* Styling for Meat Pie Section */
+
+.MeatPieFoods{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    color: var(--white-main-color);
+    row-gap: 50px;
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content-visibility: hidden;
+}
+.MeatPieFoods img{
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--orange-main);
+    border-radius: 50%;
+}
+
+.MeatPie1, .MeatPie2, .MeatPie3{
+    background-color: var(--main-dark-primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.MeatPie1:hover, .MeatPie2:hover, .MeatPie3:hover{
+    cursor: pointer;
+    transform: translateY(15px);
+    transition: all .7s ease-in-out;
+}
+.cardupMeatPie{
+    text-align: center;
+    background: var(--white-main-color);
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0, 0, 25px var(--main-dark-primary);
+    position: relative;
+    bottom: 5px;
+}
+.cardDowMeatPie{
+    padding: 20px;
+    font-size: 15px;
+}
+
+/* Styling for fried Rice Section */
+
+.friedRiceSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    color: var(--white-main-color);
+    row-gap: 50px;
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content-visibility: hidden;
+}
+
+.friedRiceSection img{
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--orange-main);
+    border-radius: 50%;
+}
+.FriedRice1, .FriedRice2, .FriedRice3{
+    background-color: var(--main-dark-primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.FriedRice1:hover, .FriedRice2:hover, .FriedRice3:hover{
+    cursor: pointer;
+    transform: translateY(15px);
+    transition: all .7s ease-in-out;
+}
+.cardupFriedRice{
+    text-align: center;
+    background: var(--white-main-color);
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0, 0, 25px var(--main-dark-primary);
+    position: relative;
+    bottom: 5px;
+}
+.cardDowFriedRice{
+    padding: 20px;
+    font-size: 15px;
+}
+
+/* Styling for Egg sauce Section */
+
+.eggSauceContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    color: var(--white-main-color);
+    row-gap: 50px;
+    animation-name: dance;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    content-visibility: hidden;
+}
+.eggSauceContainer img{
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--orange-main);
+    border-radius: 50%;
+}
+.EggSauce1, .EggSauce2, .EggSauce3, .EggSauce4, .EggSauce5{
+    background-color: var(--main-dark-primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.EggSauce1:hover, .EggSauce2:hover, .EggSauce3:hover, .EggSauce4:hover, .EggSauce5:hover{
+    cursor: pointer;
+    transform: translateY(15px);
+    transition: all .7s ease-in-out;
+}
+.cardupEggSauce{
+    text-align: center;
+    background: var(--white-main-color);
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0, 0, 25px var(--main-dark-primary);
+    position: relative;
+    bottom: 5px;
+}
+.cardDowEggSauce{
+    padding: 20px;
+    font-size: 15px;
+}
+/* for media querry section */
+/* for smaller/medium screens */
+@media screen and (max-width: 750px) and (min-width: 0px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        background-color: var(--orange-main);
+        height: 500px;
+        transform: translateY(20px);
+        transition: all .7s;
+    }
+
+    .nav-links ul li {
+        padding: 25px;
+    }
+
+    .nav-links ul {
+        display: block;
+    }
+
+    .nav-links ul li a {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links ul li a:hover {
+        font-weight: bold;
+        color: var(--white-main-color);
+        font-family: 'Jost', sans-serif;
+        text-decoration: underline;
+    }
+
+    #registerAccount:hover {
+        transform: scale(1.2, 1.3);
+    }
+
+    .navButtons {
+        display: block;
+    }
+
+    /* Home section */
+    #home {
+        min-height: 100vh;
+    }
+
+    .backgroundImg {
+        max-height: 300px;
+    }
+
+    /* carousel items */
+    .carouselContainer {
+        bottom: 250px;
+    }
+
+    /* menu section */
+    .AllFoods>div {
+        display: block
+    }
+
+    .cardsforFood {
+        position: relative;
+        left: 0;
+    }
+
+    .foodcard1,
+    .foodcard2,
+    .foodcard3,
+    .foodcard4,
+    .foodcard5,
+    .foodcard6,
+    .foodcard7, .foodcard8,.foodcard9, .foodcard10, .foodcard11, .foodcard12 {
+        margin-top: 30px;
+    }
+
+    /* Styling for Egusi soup Section */
+    .EgusiSoupSection {
+        display: block;
+    }
+
+    .Egusi1,
+    .Egusi2,
+    .Egusi3 {
+        margin-top: 30px;
+    }
+
+    /* styling for Okro Soup Section */
+    .okroSoupSection {
+        display: block;
+    }
+
+    .Okro1,
+    .Okro2,
+    .Okro3,
+    .Okro4 {
+        margin-top: 30px;
+    }
+    /* Styling for Amala & Ewedu Food Section */
+    .AmalaFoodsSection{
+        display: block;
+    }
+    .Amala1, .Amala2{
+        margin-top: 30px;
+    }   
+
+    /* Styling for Meat Pie Section */
+    .MeatPieFoods{
+        display: block;
+    }
+    .MeatPie1, .MeatPie2, .MeatPie3{
+        margin-top: 30px;
+    }
+
+    /* Styling for fried Rice Section */
+    .friedRiceSection{
+        display: block;
+    }
+    .FriedRice1, .FriedRice2, .FriedRice3{
+        margin-top: 30px;
+    }
+    /* Styling for Egg Suace Section */
+    .eggSauceContainer{
+        display: block;
+    }
+    .EggSauce1, .EggSauce2, .EggSauce3, .EggSauce4, .EggSauce5{
+        margin-top: 30px;
+    }
+}
+
+/* for Ipad Screens */
+@media screen and (max-width: 820px) and (min-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        background-color: var(--orange-main);
+        height: 500px;
+        transform: translateY(20px);
+        transition: all .7s;
+    }
+
+    .nav-links ul li {
+        padding: 30px;
+    }
+
+    .nav-links ul {
+        display: block;
+    }
+
+    .nav-links ul li a {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links ul li a:hover {
+        font-weight: bold;
+        color: var(--white-main-color);
+    }
+
+    .navButtons {
+        display: block;
+    }
+
+    /* Home section */
+    #home {
+        min-height: 60vh;
+    }
+
+    .backgroundImg {
+        max-height: 300px;
+    }
+
+    /* carousel items */
+    .carouselContainer {
+        bottom: 250px;
+    }
+
+    /* Menu section */
+    .AllFoods>div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        color: var(--white-main-color);
+        row-gap: 50px;
+    }
+
+    /* Styling for Egusi soup Section */
+    .EgusiSoupSection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        color: var(--white-main-color);
+        row-gap: 50px;
+
+    }
+
+    /* styling for Okro Soup Section */
+    .okroSoupSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* styling for Meat Pie Section */
+    .MeatPieFoods{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Styling for fried Rice Section */
+    .friedRiceSection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Styling for Egg sauce Section */
+    .eggSauceContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
