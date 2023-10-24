@@ -1,11 +1,11 @@
-![egg sauce 1](https://github.com/MiracleChibuike/naijarestaurant/assets/130606009/fdfb1996-3ae5-4d9c-9902-5f7d0f97e228)# naijarestaurant
+# naijarestaurant
 It is my Pleasure to introduce you to this awesome Nigerian Restaurant Website that I have built.. 🎉🎉🎉
 It is very responsive and user Friendly 
 
-##Languages
+#Languages
 HTML 5, CSS3, Bootstrap V5, Javascript and other APIs
 
-##Menu Section
+#Menu Section
 The menu section is divided into sections 
 -first list item
  -All Foods 
