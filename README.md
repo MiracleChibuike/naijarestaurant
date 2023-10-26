@@ -11,9 +11,10 @@ The menu section is divided into sections
  - Okro Soup
  - Amala & Ewedu
  - Meat Pie
- - Fried Rice
+ - Fried Rice and
  - Egg Sauce
--Note - [] 
+ 
+Note - [] 
 When you click on each button with its name - it is going to filter foods according to buttons that you clicked
 
 # about Section 
