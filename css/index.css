@@ -152,6 +152,11 @@ body {
     position: relative;
     bottom: 100px;
 }
+#carouselButtonHome{
+    position: relative;
+    top: 100px;
+    left: -350px;
+}
 
 .carouselContainer h2 {
     font-family: 'Dancing Script', cursive;
@@ -754,6 +759,49 @@ body {
     font-weight: bolder;
 }
 
+/* This is for Customer Section */
+
+#customers{
+    background: var(--light-white);
+    padding: 50px;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+.customerHeader{
+    font-size: 2.2rem;
+    font-family: 'Dancing Script', cursive;
+    margin: 15px;
+    font-weight: bold;
+}
+#customerImg1, #customerImg2, #customerImg3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid var(--orange-main);
+}
+#hideCarousel{
+    display: none;
+}
+.fa-caret-up{
+    color: var(--orange-main);
+    font-size: 35px;
+    position: relative;
+    left: 120px;
+    bottom: 90px;
+}
+/* for the customer comments container */
+.customerCommentsContainer, .customerCommentsContainer2, .customerCommentsContainer3{
+    background: var(--light-dark);
+    color: var(--white-main-color);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 7px;
+}
+.fa-beat-fade{
+    color: var(--orange-main);
+    margin: 10px;
+}
 /* for media querry section */
 /* for smaller/medium screens */
 @media screen and (max-width: 750px) and (min-width: 0px) {
@@ -810,6 +858,12 @@ body {
     /* carousel items */
     .carouselContainer {
         bottom: 250px;
+    }
+    #carouselButtonHome{
+        margin: 10px;
+        position: relative;
+        top: 150px;
+        left: -100px;
     }
 
     /* menu section */
@@ -942,6 +996,10 @@ body {
         width: 200px;
         height: 50px;
     }
+    /* Customer's Review Page Section */
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
+    }
 }
 
 /* for Ipad Screens */
@@ -993,6 +1051,12 @@ body {
     /* carousel items */
     .carouselContainer {
         bottom: 250px;
+    }
+    #carouselButtonHome{
+        margin: 10px;
+        position: relative;
+        top: 150px;
+        left: -200px;
     }
 
     /* Menu section */
@@ -1056,5 +1120,9 @@ body {
       #bookTable {
         position: relative;
         bottom: 0;
+    }
+    /* Customer's Review Page Section */
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
     }
 }
