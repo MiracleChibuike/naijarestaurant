@@ -39,7 +39,7 @@
       <!-- for nav-links -->
       <div class="nav-links">
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="#home" class="Active-Link">Home</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#bookTable">Book Table</a></li>
@@ -58,10 +58,10 @@
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1" id="carouselButtonHome"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2" id="carouselButtonHome"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3" id="carouselButtonHome"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+              id="carouselButtonHome"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+              id="carouselButtonHome"></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -72,8 +72,8 @@
                 This is a place to call your home. <br> As a Nigerian based reaturant, we are happy to let you taste the
                 sweet aroma of our food.
               </p>
-              <button class="orderBtn">
-                Order Now
+              <button class="orderBtn" onclick="MessageToIndividual()">
+                Order Online
               </button>
             </div>
             <div class="carousel-item">
@@ -84,8 +84,8 @@
                 This is a place to call your home. <br> As a Nigerian based reaturant, we are happy to let you taste the
                 sweet aroma of our food.
               </p>
-              <button class="orderBtn">
-                Order Now
+              <button class="orderBtn" onclick="MessageToIndividual()">
+                Order Online
               </button>
             </div>
             <div class="carousel-item">
@@ -96,8 +96,8 @@
                 This is a place to call your home. <br> As a Nigerian based reaturant, we are happy to let you taste the
                 sweet aroma of our food.
               </p>
-              <button class="orderBtn">
-                Order Now
+              <button class="orderBtn" onclick="MessageToIndividual()">
+                Order Online
               </button>
             </div>
           </div>
@@ -683,30 +683,29 @@
           <!-- for phone number input field -->
           <div class="numberFied">
             <label for="YourNumber"></label>
-            <input type="number" id="YourNumber" placeholder="Phone Number" autocomplete="cc-number" autofocus
-              maxlength="15" required>
+            <input type="tel" id="YourNumber" placeholder="Phone Number" autocomplete="mobile" maxlength="15" required>
           </div>
           <!-- for email input field -->
           <div class="emailFied">
             <label for="YourEmail"></label>
-            <input type="text" id="YourEmail" placeholder="Your Email" autocomplete="email" autofocus required>
+            <input type="text" id="YourEmail" placeholder="Your Email" autocomplete="email" required>
           </div>
           <!-- For booking the number of persons fieled -->
-         <div class="tableNumberFieled">
-          <input list="book-now" placeholder="Number Of Persons?" required/>
-          <datalist id="book-now">
-            <option value="1"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-            <option value="10"></option>
-          </datalist>
-         </div>
+          <div class="tableNumberFieled">
+            <input list="book-now" placeholder="How Many People?" required />
+            <datalist id="book-now">
+              <option value="1"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="10"></option>
+            </datalist>
+          </div>
           <!-- for the date of booking -->
           <div class="bookingdateFieled">
             <label for="dateOfBooking"></label>
-          <input type="datetime-local" id="dateOfBooking" required>
+            <input type="datetime-local" id="dateOfBooking" required>
           </div>
           <!-- Booking Button -->
           <button type="submit" id="BookingBtn">
@@ -723,68 +722,162 @@
         <!-- For the carousel cintainer -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" id="hideCarousel"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" id="hideCarousel"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" id="hideCarousel"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1" id="hideCarousel"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+              id="hideCarousel"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+              id="hideCarousel"></button>
           </div>
           <div class="carousel-inner">
             <!-- for the first carousel item -->
             <div class="carousel-item active">
               <div class="customerCommentsContainer">
                 <p class="customerMsg">
-                  "An evening at La-Hot is a sensory symphony of flavors, elegance, and hospitality. From the moment you step through the door, you're 
+                  "An evening at La-Hot is a sensory symphony of flavors, elegance, and hospitality. From the moment you
+                  step through the door, you're
                   transported to a world of culinary delight. The menu is a culinary masterpiece,
-                   a carefully orchestrated fusion of innovation and tradition.
-                   <aside>
-                    <strong>Miracle Chibuike</strong> <br> <i class="fa-solid fa-location-dot fa-beat-fade"></i> Owerri, Nigeria
-                   </aside>
+                  a carefully orchestrated fusion of innovation and tradition. <br>
+                  <i class="fa-solid fa-star fa-beat"></i><i class="fa-solid fa-star fa-beat"></i>
+                  <i class="fa-solid fa-star fa-beat"></i><i class="fa-solid fa-star fa-beat"></i>
+                  <i class="fa-solid fa-star fa-beat"></i>
+                <aside>
+                  <strong>Miracle Chibuike</strong> <br> <i class="fa-solid fa-location-dot fa-beat-fade"></i> Owerri,
+                  Nigeria
+                </aside>
                 </p>
               </div>
               <i class="fa-solid fa-caret-up"></i>
-              <img src="images/miracles image.jpg"  alt="..." id="customerImg1">
+              <img src="images/miracles image.jpg" alt="..." id="customerImg1">
             </div>
             <!-- for the 2nd carousel Item -->
             <div class="carousel-item">
               <div class="customerCommentsContainer2">
                 <p class="customerMsg">
-                  "An evening at La-Hot is a sensory symphony of flavors, elegance, and hospitality. From the moment you step through the door, you're 
+                  "An evening at La-Hot is a sensory symphony of flavors, elegance, and hospitality. From the moment you
+                  step through the door, you're
                   transported to a world of culinary delight. The menu is a culinary masterpiece,
-                   a carefully orchestrated fusion of innovation and tradition.
-                   <aside>
-                    <strong>Miracle Chibuike</strong> <br> <i class="fa-solid fa-location-dot fa-beat-fade"></i> Owerri, Nigeria
-                   </aside>
+                  a carefully orchestrated fusion of innovation and tradition. <br>
+                  <i class="fa-solid fa-star fa-beat"></i><i class="fa-solid fa-star fa-beat"></i>
+                  <i class="fa-solid fa-star fa-beat"></i><i class="fa-solid fa-star fa-beat"></i>
+                  <i class="fa-solid fa-star fa-beat"></i>
+                <aside>
+                  <strong>Miracle Chibuike</strong> <br> <i class="fa-solid fa-location-dot fa-beat-fade"></i> Owerri,
+                  Nigeria
+                </aside>
                 </p>
               </div>
               <i class="fa-solid fa-caret-up"></i>
-              <img src="images/mira2.jpg"  alt="..." id="customerImg2">
+              <img src="images/mira2.jpg" alt="..." id="customerImg2">
             </div>
             <!-- for the 3rd carousel item -->
             <div class="carousel-item">
               <div class="customerCommentsContainer3">
                 <p class="customerMsg">
-                  "An evening at La-Hot is a sensory symphony of flavors, elegance, and hospitality. From the moment you step through the door, you're 
+                  "An evening at La-Hot is a sensory symphony of flavors, elegance, and hospitality. From the moment you
+                  step through the door, you're
                   transported to a world of culinary delight. The menu is a culinary masterpiece,
-                   a carefully orchestrated fusion of innovation and tradition.
-                   <aside>
-                    <strong>Miracle Chibuike</strong> <br> <i class="fa-solid fa-location-dot fa-beat-fade"></i> Owerri, Nigeria
-                   </aside>
+                  a carefully orchestrated fusion of innovation and tradition. <br>
+                  <i class="fa-solid fa-star fa-beat"></i><i class="fa-solid fa-star fa-beat"></i>
+                  <i class="fa-solid fa-star fa-beat"></i><i class="fa-solid fa-star fa-beat"></i>
+                  <i class="fa-solid fa-star fa-beat"></i>
+                <aside>
+                  <strong>Miracle Chibuike</strong> <br> <i class="fa-solid fa-location-dot fa-beat-fade"></i> Owerri,
+                  Nigeria
+                </aside>
                 </p>
               </div>
               <i class="fa-solid fa-caret-up"></i>
-              <img src="images/miracles image.jpg"  alt="..." id="customerImg3">
+              <img src="images/miracles image.jpg" alt="..." id="customerImg3">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-       
+
       </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <section id="Footer">
+      <!-- This Div is going to be divided in 3 sections -->
+      <!-- for the parent Footer-Outer container -->
+      <div class="parentFooter">
+        <!-- Container For Contact Us -->
+        <div class="contactUsContainer">
+          <h2 class="contactHeader">Let's Get In Touch</h2>
+          <!-- for location -->
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Owerri, Imo State Nigeria
+          </p>
+          <!-- for phone contact -->
+          <p>
+            <i class="fa-solid fa-phone-volume fa-shake"></i>
+            <a href="tel:+2349056255572">Call +234 905-625-5572</a>
+          </p>
+          <!-- for email contact -->
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:lahotfastfoodng@gmail.com">lahotfastfood@gmail.com</a>
+          </p>
+        </div>
+        <!-- Container For Retaurant Info -->
+        <div class="laHotContainer">
+          <h2 class="lahotHeadre">La-Hot</h2>
+          <p class="lahotText">
+            "In the heart of Owerri, Imo, a culinary journey was born. <br> La-Hot, established in 2002, has a rich
+            history
+            of delighting palates <br> and creating cherished memories. <br> What began as a humble endeavor by
+            <strong>Onyia Miracle Chibuike</strong> <br> soon evolved into
+            a gastronomic destination renowned <br> for its commitment to quality and innovation."
+          </p>
+        </div>
+        <!-- Container for Opening Hours -->
+        <div class="openingHoursContainer">
+          <h2 class="hoursHeadre">Opening Hours</h2>
+          <p><strong>Monday to Friday</strong>
+          <aside>
+            8:00 Am - 8:30 Pm
+          </aside>
+          </p>
+          <p>
+            <strong>Sundays </strong>
+          <aside>
+            2:00 Pm - 7:30 Pm
+          </aside>
+          </p>
+        </div>
+      </div>
+         <!-- For the Social Media Icons -->
+         <div class="socilaMediaContacts">
+          <!-- LiinkedIn icon-->
+          <a href="http://www.linkedin.com/in/onyia-miracle-b582b4237/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <!-- for facebook icon-->
+          <i class="fa-brands fa-facebook-f"></i>
+          <!-- for Instagram icon-->
+          <i class="fa-brands fa-instagram"></i>
+          <!-- for pinterest icon -->
+          <i class="fa-brands fa-pinterest-p"></i>
+          <!-- for twitter icon -->
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+
+        <!-- For the Last Message Down -->
+        <div class="Rights">
+         <p> &COPY; 2023 All Rights Reserved By <a href="http://github.com/MiracleChibuike" target="_blank" > Miracle-Tech Coding Projects</a> </p>
+         <p>&COPY; Distributed By <a href="http://github.com/MiracleChibuike">Miracle Chibuike</a></p>
+        </div>
     </section>
 
   </div>

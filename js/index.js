@@ -22,6 +22,13 @@ closeNavs.addEventListener("click", function closeNavLinks() {
     }
 })
 
+// For Oredering online//
+// This button is going to return a message of order of conformation when clicked
+let orderAction = document.querySelectorAll(".orderBtn");
+function MessageToIndividual() {
+    alert("We recieved Your Order - Thanks For Your Patronage")
+}
+
 // This code is going to be responsible for hiding and closing the foods
 let cardFoodsExempt = document.querySelector(".cardsforFood")
 let foodContainerAll = document.getElementById("forAllFoods");
