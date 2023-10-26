@@ -22,9 +22,11 @@ body {
     /* font-family: 'Dancing Script', cursive; */
     /* background: var(--main-dark-primary); */
 }
-.container-main{
+
+.container-main {
     background: var(--light-white);
 }
+
 /* styling for the menu container */
 .menu {
     display: flex;
@@ -146,7 +148,7 @@ body {
     background-color: var(--light-dark);
     position: relative;
     top: 50px;
-    
+
 }
 
 .imageContainerBg {
@@ -791,7 +793,8 @@ body {
     margin: 15px;
     font-weight: bold;
 }
-.customerContainer i{
+
+.customerContainer i {
     color: var(--orange-main);
     padding: 5px;
     margin-top: 5px;
@@ -869,11 +872,13 @@ body {
 .contactUsContainer a:hover {
     color: var(--orange-main);
 }
+
 /* for socila Media icons styling */
-.socilaMediaContacts{
+.socilaMediaContacts {
     margin-top: 20px;
 }
-.socilaMediaContacts i{
+
+.socilaMediaContacts i {
     font-size: 20px;
     background: var(--white-main-color);
     color: var(--main-dark-primary);
@@ -883,24 +888,50 @@ body {
     width: 30px;
     height: 30px;
 }
-.socilaMediaContacts i:hover{
+
+.socilaMediaContacts i:hover {
     color: var(--white-main-color);
     cursor: pointer;
     background: var(--main-dark-primary);
     transition: .3s ease-in;
     transform: translateY(3px);
 }
+
 /* styling for the last text on the bottom*/
-.Rights{
+.Rights {
     margin-top: 40px;
 }
-.Rights a{
+
+.Rights a {
     color: var(--white-main-color);
     font-weight: bold;
 }
-.Rights a:hover{
+
+.Rights a:hover {
     cursor: grab;
     color: var(--orange-main);
+}
+
+.navigatButton {
+    display: none;
+}
+
+.fa-chevron-up {
+    font-size: 30px;
+    background: var(--main-dark-primary);
+    color: var(--white-main-color);
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    left: 30vh;
+}
+
+.fa-chevron-up:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+    cursor: pointer;
 }
 
 /* for media querry section */
@@ -1123,8 +1154,22 @@ body {
     .parentFooter {
         display: block;
     }
-    .contactUsContainer, .laHotContainer, .openingHoursContainer{
+
+    .contactUsContainer,
+    .laHotContainer,
+    .openingHoursContainer {
         margin-top: 35px;
+    }
+
+    .navigatButton {
+        display: block;
+    }
+
+    .fa-chevron-up {
+        position: relative;
+        left: 15vh;
+        margin-left: -10px;
+        margin-top: 10px;
     }
 }
 
@@ -1137,7 +1182,7 @@ body {
         left: 0;
         top: 50px;
         width: 100%;
-        background-color: var(--orange-main);
+        background-color: var(--main-dark-primary);
         height: 500px;
         transform: translateY(20px);
         transition: all .7s;
@@ -1265,16 +1310,25 @@ body {
     .carousel-control-next {
         display: none;
     }
+
     /* Footer Section  */
-#Footer{
-    position: relative;
-    bottom: 0;
-}
-.parentFooter{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.contactUsContainer, .laHotContainer, .openingHoursContainer{
-    margin-top: 20px;
-}
+    #Footer {
+        position: relative;
+        bottom: 0;
+    }
+
+    .parentFooter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contactUsContainer,
+    .laHotContainer,
+    .openingHoursContainer {
+        margin-top: 20px;
+    }
+
+    .navigatButton {
+        display: block;
+    }
 }
