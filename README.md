@@ -14,10 +14,10 @@ The menu section is divided into sections
  - Fried Rice and
  - Egg Sauce
  
-Note - [] 
+- Note -
 When you click on each button with its name - it is going to filter foods according to buttons that you clicked
 
-# about Section 
+# About Section 
 Here, you can read all about the restaurant. See what makes them difference from others
 
 # Booking A Table Section 
@@ -30,6 +30,7 @@ Although I didn't include this as a section, you are going to see it just after 
 Just Like the Custommer Comments sections, I did not add ot sa navigation link rather, you are going to see it at the end of the page.
 
 # Website Features
-[] Highly Responsive - See how it adapts to various screen sizes without having an overlay or lapping
+- Highly Responsive - See how it adapts to various screen sizes without having an overlay or lapping
+- Google Translator - This webpsite has a google translate space where you can be able to change the language of the page to your desired choice. 
 
 
