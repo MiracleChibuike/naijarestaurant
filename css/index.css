@@ -42,8 +42,11 @@ body {
     margin: 5px;
     font-size: 2.2rem;
     font-weight: bold;
+    padding-left: 5px;
+    /* Remember to increase the margin of this logo tomorrow or padding left */
 }
-.logo:hover{
+
+.logo:hover {
     cursor: pointer;
 }
 
@@ -213,7 +216,12 @@ body {
 .foodcard4:hover,
 .foodcard5:hover,
 .foodcard6:hover,
-.foodcard7:hover, .foodcard8:hover, .foodcard9:hover, .foodcard10:hover, .foodcard11:hover, .foodcard12:hover {
+.foodcard7:hover,
+.foodcard8:hover,
+.foodcard9:hover,
+.foodcard10:hover,
+.foodcard11:hover,
+.foodcard12:hover {
     cursor: pointer;
     transform: translateY(15px);
     transition: all .7s ease-in-out;
@@ -263,7 +271,11 @@ body {
 .foodcard5,
 .foodcard6,
 .foodcard7,
-.foodcard8, .foodcard9, .foodcard10, .foodcard11, .foodcard12{
+.foodcard8,
+.foodcard9,
+.foodcard10,
+.foodcard11,
+.foodcard12 {
     background-color: var(--main-dark-primary);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -477,7 +489,7 @@ body {
 
 /* Styling for Meat Pie Section */
 
-.MeatPieFoods{
+.MeatPieFoods {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
@@ -488,24 +500,31 @@ body {
     animation-iteration-count: 1;
     content-visibility: hidden;
 }
-.MeatPieFoods img{
+
+.MeatPieFoods img {
     width: 150px;
     height: 150px;
     border: 4px solid var(--orange-main);
     border-radius: 50%;
 }
 
-.MeatPie1, .MeatPie2, .MeatPie3{
+.MeatPie1,
+.MeatPie2,
+.MeatPie3 {
     background-color: var(--main-dark-primary);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.MeatPie1:hover, .MeatPie2:hover, .MeatPie3:hover{
+
+.MeatPie1:hover,
+.MeatPie2:hover,
+.MeatPie3:hover {
     cursor: pointer;
     transform: translateY(15px);
     transition: all .7s ease-in-out;
 }
-.cardupMeatPie{
+
+.cardupMeatPie {
     text-align: center;
     background: var(--white-main-color);
     padding: 15px;
@@ -516,14 +535,15 @@ body {
     position: relative;
     bottom: 5px;
 }
-.cardDowMeatPie{
+
+.cardDowMeatPie {
     padding: 20px;
     font-size: 15px;
 }
 
 /* Styling for fried Rice Section */
 
-.friedRiceSection{
+.friedRiceSection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
@@ -535,23 +555,30 @@ body {
     content-visibility: hidden;
 }
 
-.friedRiceSection img{
+.friedRiceSection img {
     width: 150px;
     height: 150px;
     border: 4px solid var(--orange-main);
     border-radius: 50%;
 }
-.FriedRice1, .FriedRice2, .FriedRice3{
+
+.FriedRice1,
+.FriedRice2,
+.FriedRice3 {
     background-color: var(--main-dark-primary);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.FriedRice1:hover, .FriedRice2:hover, .FriedRice3:hover{
+
+.FriedRice1:hover,
+.FriedRice2:hover,
+.FriedRice3:hover {
     cursor: pointer;
     transform: translateY(15px);
     transition: all .7s ease-in-out;
 }
-.cardupFriedRice{
+
+.cardupFriedRice {
     text-align: center;
     background: var(--white-main-color);
     padding: 15px;
@@ -562,14 +589,15 @@ body {
     position: relative;
     bottom: 5px;
 }
-.cardDowFriedRice{
+
+.cardDowFriedRice {
     padding: 20px;
     font-size: 15px;
 }
 
 /* Styling for Egg sauce Section */
 
-.eggSauceContainer{
+.eggSauceContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
@@ -580,23 +608,35 @@ body {
     animation-iteration-count: 1;
     content-visibility: hidden;
 }
-.eggSauceContainer img{
+
+.eggSauceContainer img {
     width: 150px;
     height: 150px;
     border: 4px solid var(--orange-main);
     border-radius: 50%;
 }
-.EggSauce1, .EggSauce2, .EggSauce3, .EggSauce4, .EggSauce5{
+
+.EggSauce1,
+.EggSauce2,
+.EggSauce3,
+.EggSauce4,
+.EggSauce5 {
     background-color: var(--main-dark-primary);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.EggSauce1:hover, .EggSauce2:hover, .EggSauce3:hover, .EggSauce4:hover, .EggSauce5:hover{
+
+.EggSauce1:hover,
+.EggSauce2:hover,
+.EggSauce3:hover,
+.EggSauce4:hover,
+.EggSauce5:hover {
     cursor: pointer;
     transform: translateY(15px);
     transition: all .7s ease-in-out;
 }
-.cardupEggSauce{
+
+.cardupEggSauce {
     text-align: center;
     background: var(--white-main-color);
     padding: 15px;
@@ -607,10 +647,113 @@ body {
     position: relative;
     bottom: 5px;
 }
-.cardDowEggSauce{
+
+.cardDowEggSauce {
     padding: 20px;
     font-size: 15px;
 }
+
+/* About Section */
+#about {
+    background: var(--light-dark);
+    padding: 50px;
+    position: relative;
+    bottom: 50px;
+}
+
+.aboutContainerr {
+    display: flex;
+    justify-content: center;
+    color: var(--white-main-color);
+    font-size: 18px;
+}
+
+.aboutImg,
+.aboutText {
+    padding: 20px;
+}
+
+.aboutImg img:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: .4s ease-in;
+    transform: translateY(-15px);
+}
+
+.aboutHeader {
+    font-size: 2.2rem;
+    font-family: 'Dancing Script', cursive;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.aboutInfoText {
+    line-height: 2;
+    text-align: justify;
+}
+
+/* Book A table Section */
+#bookTable {
+    background: var(--light-white);
+    padding: 50px;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+.bookingHeader{
+    font-size: 2.2rem;
+    font-family: 'Dancing Script', cursive;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.nameFied input,
+.numberFied input,
+.emailFied input,
+.tableNumberFieled input,
+.bookingdateFieled input {
+    width: 400px;
+    height: 50px;
+    margin: 15px;
+    outline: none;
+    border: 2px solid var(--light-dark);
+    border-radius: 7px;
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.nameFied input:hover,
+.numberFied input:hover,
+.emailFied input:hover,
+.tableNumberFieled input:hover,
+.bookingdateFieled input:hover {
+    transition: all .2s ease-in-out;
+    border: 2px solid var(--white-main-color);
+    transform: scale(1.0, 1.1);
+    cursor: pointer;
+}
+
+::placeholder {
+    color: var(--main-dark-primary);
+}
+
+#BookingBtn {
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--orange-main);
+    background: var(--orange-main);
+    color: var(--white-main-color);
+    border-radius: 7px;
+}
+
+#BookingBtn:hover {
+    transition: .4s ease;
+    transform: translateX(15px);
+    font-weight: bolder;
+}
+
 /* for media querry section */
 /* for smaller/medium screens */
 @media screen and (max-width: 750px) and (min-width: 0px) {
@@ -670,10 +813,11 @@ body {
     }
 
     /* menu section */
-    #menu{
+    #menu {
         position: relative;
         bottom: 0;
     }
+
     .AllFoods>div {
         display: block
     }
@@ -689,7 +833,12 @@ body {
     .foodcard4,
     .foodcard5,
     .foodcard6,
-    .foodcard7, .foodcard8,.foodcard9, .foodcard10, .foodcard11, .foodcard12 {
+    .foodcard7,
+    .foodcard8,
+    .foodcard9,
+    .foodcard10,
+    .foodcard11,
+    .foodcard12 {
         margin-top: 30px;
     }
 
@@ -715,35 +864,83 @@ body {
     .Okro4 {
         margin-top: 30px;
     }
+
     /* Styling for Amala & Ewedu Food Section */
-    .AmalaFoodsSection{
+    .AmalaFoodsSection {
         display: block;
     }
-    .Amala1, .Amala2{
+
+    .Amala1,
+    .Amala2 {
         margin-top: 30px;
-    }   
+    }
 
     /* Styling for Meat Pie Section */
-    .MeatPieFoods{
+    .MeatPieFoods {
         display: block;
     }
-    .MeatPie1, .MeatPie2, .MeatPie3{
+
+    .MeatPie1,
+    .MeatPie2,
+    .MeatPie3 {
         margin-top: 30px;
     }
 
     /* Styling for fried Rice Section */
-    .friedRiceSection{
+    .friedRiceSection {
         display: block;
     }
-    .FriedRice1, .FriedRice2, .FriedRice3{
+
+    .FriedRice1,
+    .FriedRice2,
+    .FriedRice3 {
         margin-top: 30px;
     }
+
     /* Styling for Egg Suace Section */
-    .eggSauceContainer{
+    .eggSauceContainer {
         display: block;
     }
-    .EggSauce1, .EggSauce2, .EggSauce3, .EggSauce4, .EggSauce5{
+
+    .EggSauce1,
+    .EggSauce2,
+    .EggSauce3,
+    .EggSauce4,
+    .EggSauce5 {
         margin-top: 30px;
+    }
+
+    /* About Section */
+    #about {
+        position: relative;
+        bottom: 0;
+    }
+
+    .aboutContainerr {
+        display: block;
+    }
+
+    .aboutImg {
+        text-align: center;
+    }
+
+    .aboutImg img {
+        width: 200px;
+    }
+
+    /* Book A table Section */
+    #bookTable {
+        position: relative;
+        bottom: 0;
+    }
+
+    .nameFied input,
+    .numberFied input,
+    .emailFied input,
+    .tableNumberFieled input,
+    .bookingdateFieled input {
+        width: 200px;
+        height: 50px;
     }
 }
 
@@ -799,10 +996,11 @@ body {
     }
 
     /* Menu section */
-    #menu{
+    #menu {
         position: relative;
         bottom: 0;
     }
+
     .AllFoods>div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -827,17 +1025,36 @@ body {
     }
 
     /* styling for Meat Pie Section */
-    .MeatPieFoods{
+    .MeatPieFoods {
         grid-template-columns: repeat(2, 1fr);
     }
 
     /* Styling for fried Rice Section */
-    .friedRiceSection{
+    .friedRiceSection {
         grid-template-columns: repeat(2, 1fr);
     }
 
     /* Styling for Egg sauce Section */
-    .eggSauceContainer{
+    .eggSauceContainer {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About Section */
+    #about {
+        position: relative;
+        bottom: 0;
+    }
+
+    .aboutContainerr {
+        display: block;
+    }
+
+    .aboutImg {
+        text-align: center;
+    }
+      /* Book A table Section */
+      #bookTable {
+        position: relative;
+        bottom: 0;
     }
 }

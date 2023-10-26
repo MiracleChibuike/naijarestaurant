@@ -41,8 +41,8 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#menu">Menu</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Book Table</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#bookTable">Book Table</a></li>
           <li><a href=""><i class="fa-solid fa-user-plus" id="registerAccount"></i></a></li>
         </ul>
       </div>
@@ -247,7 +247,8 @@
               </div>
               <div class="cardDown">
                 <h3>Delicious Chicken Jollof Rice</h3>
-                <p>Dont miss the blessed taste of our Chicken Jollof Rice <br> A food you are not going to compare with another</p>
+                <p>Dont miss the blessed taste of our Chicken Jollof Rice <br> A food you are not going to compare with
+                  another</p>
                 <div class="inner">
                   <i class="fa-solid fa-naira-sign">7, 000</i>
                   <i class="fa-solid fa-cart-plus"></i>
@@ -261,7 +262,8 @@
               </div>
               <div class="cardDown">
                 <h3>Delicious Macaroni Pasta</h3>
-                <p>Dont miss the blessed taste of our Macaroni Pasta <br> A food you are not going to compare with another</p>
+                <p>Dont miss the blessed taste of our Macaroni Pasta <br> A food you are not going to compare with
+                  another</p>
                 <div class="inner">
                   <i class="fa-solid fa-naira-sign">9, 700</i>
                   <i class="fa-solid fa-cart-plus"></i>
@@ -274,8 +276,9 @@
                 <img src="images/okro soup 2.png" alt="">
               </div>
               <div class="cardDown">
-                <h3>Delicious  Okro Soup</h3>
-                <p>Dont miss the blessed taste of our Chicken Okro Soup <br> A food you are not going to compare with another</p>
+                <h3>Delicious Okro Soup</h3>
+                <p>Dont miss the blessed taste of our Chicken Okro Soup <br> A food you are not going to compare with
+                  another</p>
                 <div class="inner">
                   <i class="fa-solid fa-naira-sign">4, 700</i>
                   <i class="fa-solid fa-cart-plus"></i>
@@ -288,8 +291,9 @@
                 <img src="images/amala and ewedu 2.png" alt="">
               </div>
               <div class="cardDown">
-                <h3>Delicious  Amala & Ewedu Soup</h3>
-                <p>Dont miss the blessed taste of our  Amala & Ewedu Soup <br> A food you are not going to compare with another</p>
+                <h3>Delicious Amala & Ewedu Soup</h3>
+                <p>Dont miss the blessed taste of our Amala & Ewedu Soup <br> A food you are not going to compare with
+                  another</p>
                 <div class="inner">
                   <i class="fa-solid fa-naira-sign">2, 700</i>
                   <i class="fa-solid fa-cart-plus"></i>
@@ -628,6 +632,88 @@
 
       </div>
 
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <!-- for the about us Container -->
+      <div class="aboutContainerr">
+        <!-- container for the image on the about -->
+        <div class="aboutImg">
+          <img src="images/sauce bg egg.png" alt="">
+        </div>
+        <!-- container for the About us Text -->
+        <div class="aboutText">
+          <h2 class="aboutHeader">We Are La-Hot</h2>
+          <p class="aboutInfoText">
+            "Welcome to La-Hot Restaurant <strong>'Nigerian best Restaurant'</strong> where culinary excellence meets a
+            warm and inviting atmosphere.
+            Discover a symphony of flavors, crafted with passion and precision, in a warm and inviting ambiance. From
+            delectable appetizers to
+            mouthwatering entrees and decadent desserts, our menu celebrates culinary excellence. Join us for a
+            memorable dining experience,
+            where every bite tells a story. Explore our menu, reserve your table, and savor the moment at La-Hot
+            Restaurant.
+            Whether you're seeking a romantic dinner, a lively family gathering, or a memorable celebration, our
+            restaurant promises to delight your
+            senses and create lasting memories.
+            Our story began with a dream to provide a place where friends and family could gather over exceptional food
+            and drinks. We've carefully
+            curated a menu that blends traditional and
+            contemporary flavors, resulting in a dining experience that transcends the ordinary.
+            Join us for a gastronomic journey that combines impeccable service with a passion for exceptional food."
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book A Table Section -->
+    <section id="bookTable">
+      <!-- bookingHeader -->
+      <h2 class="bookingHeader">Reserve A Table Now</h2>
+      <div class="formBookingTable">
+        <form action="mailto:lahotfastfood@gmail.com" method="post">
+          <!-- for name input field -->
+          <div class="nameFied">
+            <label for="YourName"></label>
+            <input type="text" id="YourName" placeholder="Your Name" autocomplete="name" autofocus autocapitalize="name"
+              required>
+          </div>
+          <!-- for phone number input field -->
+          <div class="numberFied">
+            <label for="YourNumber"></label>
+            <input type="number" id="YourNumber" placeholder="Phone Number" autocomplete="cc-number" autofocus
+              maxlength="15" required>
+          </div>
+          <!-- for email input field -->
+          <div class="emailFied">
+            <label for="YourEmail"></label>
+            <input type="text" id="YourEmail" placeholder="Your Email" autocomplete="email" autofocus required>
+          </div>
+          <!-- For booking the number of persons fieled -->
+         <div class="tableNumberFieled">
+          <input list="book-now" placeholder="Number Of Persons?" required/>
+          <datalist id="book-now">
+            <option value="1"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="10"></option>
+          </datalist>
+         </div>
+          <!-- for the date of booking -->
+          <div class="bookingdateFieled">
+            <label for="dateOfBooking"></label>
+          <input type="datetime-local" id="dateOfBooking" required>
+          </div>
+          <!-- Booking Button -->
+          <button type="submit" id="BookingBtn">
+            Book Now
+          </button>
+        </form>
+      </div>
     </section>
 
   </div>
