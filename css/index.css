@@ -57,9 +57,10 @@ body {
     cursor: pointer;
 }
 
-/* styling for nav-links */
+/* styling for nav-links Primary */
 .nav-links {
     font-size: 18px;
+    display: none;
 }
 
 .nav-links ul {
@@ -96,6 +97,45 @@ body {
 .nav-links ul li .Active-Link:hover {
     text-decoration: none;
 }
+/* For NavLinks Seconadry */
+.nav-linksSecondary{
+    font-size: 18px;
+}
+.nav-linksSecondary ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-linksSecondary ul li {
+    padding: 15px;
+}
+
+.nav-linksSecondary ul li:hover {
+    color: var(--orange-main);
+    transition: all .3s;
+    transform: scale(1.1, 1.0);
+    cursor: pointer;
+}
+
+.nav-linksSecondary ul li a {
+    text-decoration: none;
+    color: var(--white-main-color);
+}
+
+.nav-linksSecondary ul li a:hover {
+    color: var(--orange-main);
+    font-weight: bold;
+}
+
+.nav-linksSecondary ul li .Active-Link {
+    color: var(--orange-main);
+    text-decoration: underline;
+}
+
+.nav-linksSecondary ul li .Active-Link:hover {
+    text-decoration: none;
+}
+/* NavLinks Secondary */
 
 .navButtons {
     display: none;
@@ -987,6 +1027,10 @@ body {
         font-family: 'Jost', sans-serif;
         text-decoration: underline;
     }
+    /* for nav-links Secondary */
+    .nav-linksSecondary{
+        display: none;
+    }
 
     #registerAccount:hover {
         transform: scale(1.2, 1.3);
@@ -1222,6 +1266,10 @@ body {
     .nav-links ul li a:hover {
         font-weight: bold;
         color: var(--white-main-color);
+    }
+     /* for nav-links Secondary */
+     .nav-linksSecondary{
+        display: none;
     }
 
     .navButtons {

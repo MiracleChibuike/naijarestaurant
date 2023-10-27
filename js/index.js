@@ -22,6 +22,46 @@ closeNavs.addEventListener("click", function closeNavLinks() {
     }
 })
 
+// // To be able to close the navbar section when you click on the home anchor Link
+const AnchorNav = document.querySelector(".nav-1")
+AnchorNav.addEventListener("click", function () {
+    if (navLinksContainer.style.display = "block") {
+        navLinksContainer.style.display = "none"
+        closeNavs.style.display = "none"
+        openNavs.style.display = "block"
+    }
+})
+
+// To be able to close the navbar section when you click on the menu anchor Link
+const menurNav = document.querySelector(".nav-2")
+menurNav.addEventListener("click", function () {
+    if (navLinksContainer.style.display = "block") {
+        navLinksContainer.style.display = "none"
+        closeNavs.style.display = "none"
+        openNavs.style.display = "block"
+    }
+})
+
+// To be able to close the navbar section when you click on the about anchor Link
+const aboutNav = document.querySelector(".nav-3")
+aboutNav.addEventListener("click", function () {
+    if (navLinksContainer.style.display = "block") {
+        navLinksContainer.style.display = "none"
+        closeNavs.style.display = "none"
+        openNavs.style.display = "block"
+    }
+})
+
+// To be able to close the navbar section when you click on the about anchor Link
+const BookTableNav = document.querySelector(".nav-4")
+BookTableNav.addEventListener("click", function () {
+    if (navLinksContainer.style.display = "block") {
+        navLinksContainer.style.display = "none"
+        closeNavs.style.display = "none"
+        openNavs.style.display = "block"
+    }
+})
+
 // For Oredering online//
 // This button is going to return a message of order of conformation when clicked
 let orderAction = document.querySelectorAll(".orderBtn");
