@@ -1,16 +1,33 @@
 
+// For calculating the prices of all Fried Rice altogether
+const rice1 = document.getElementById("calculateRice1");
+const rice2 = document.getElementById("calculateRice2");
+const rice3 = document.getElementById("calculateRice3");
+// let RicePrices = [2500, 2500, 2500]
+let OriginalPrice = document.getElementById("price1");
+let SecondPrice = document.getElementById("price2");
+let ThirdPrice = document.getElementById("price3")
+rice1.addEventListener("click", function CalculateRicePriceAll (){
+//    console.log(OriginalPrice.textContent)
+    alert(OriginalPrice.textContent * 3)
+})
+
+
+
 // For Navbar Section
 // Defining the icons variable
 
 const closeNavs = document.getElementById("closeNavs")
 const openNavs = document.getElementById("openNavs");
 let navLinksContainer = document.querySelector(".nav-links")
+let userName = document.querySelector(".userNameContainer")
 openNavs.addEventListener("click", function OpenNavsLinks() {
     // alert("I got clicked")
     if (navLinksContainer.style.display = "none") {
         navLinksContainer.style.display = "block"
         openNavs.style.display = "none"
         closeNavs.style.display = "block"
+        console.log(userName)
     }
 })
 // for closing the nav-links

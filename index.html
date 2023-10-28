@@ -39,24 +39,26 @@
       <!-- for nav-links PRIMARY specifically designed to show only on the mobile screens -->
       <div class="nav-links">
         <ul>
-          <li><a href="#home" class="Active-Link nav-1" >Home</a></li>
-          <li><a href="#menu"  class="nav-2">Menu</a></li>
+          <li><a href="#home" class="Active-Link nav-1">Home</a></li>
+          <li><a href="#menu" class="nav-2">Menu</a></li>
           <li><a href="#about" class="nav-3">About</a></li>
-          <li><a href="#bookTable"  class="nav-4">Book Table</a></li>
-          <li><a href=""><i class="fa-solid fa-user-plus" id="registerAccount"></i></a></li>
+          <li><a href="#bookTable" class="nav-4">Book Table</a></li>
+          <li><a href="accoutnlogin.html"><i class="fa-solid fa-user-plus" id="registerAccount"></i></a></li>
         </ul>
       </div>
       <!-- For Nav-Links SECONDARY specifically designed to show on the desktop or Large Screens only-->
       <div class="nav-linksSecondary">
         <ul>
-          <li><a href="#home" class="Active-Link nav-1" >Home</a></li>
-          <li><a href="#menu"  class="nav-2">Menu</a></li>
+          <li><a href="#home" class="Active-Link nav-1">Home</a></li>
+          <li><a href="#menu" class="nav-2">Menu</a></li>
           <li><a href="#about" class="nav-3">About</a></li>
-          <li><a href="#bookTable"  class="nav-4">Book Table</a></li>
-          <li><a href=""><i class="fa-solid fa-user-plus" id="registerAccount"></i></a></li>
+          <li><a href="#bookTable" class="nav-4">Book Table</a></li>
+          <li><a href="accoutnlogin.html" target="_blank"><i class="fa-solid fa-user-plus" id="registerAccount"></i></a>
+            <!-- <p class="userNameContainer" style="position: relative; left: -15px; top: 5px;"></p> -->
+          </li>
         </ul>
       </div>
-       <!-- For Nav-Links Secondary -->
+      <!-- For Nav-Links Secondary -->
     </div>
     <!-- Home Section -->
     <section id="home">
@@ -517,8 +519,8 @@
               <p>Dont miss the blessed taste of our Fried Rice <br> A food you are not going to compare with
                 another</p>
               <div class="inner">
-                <i class="fa-solid fa-naira-sign">2, 500</i>
-                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fa-solid fa-naira-sign" id="price1">2500</i>
+                <i class="fa-solid fa-cart-plus" id="calculateRice1"></i>
               </div>
             </div>
           </div>
@@ -533,8 +535,8 @@
               <p>Dont miss the blessed taste of our Fried Rice <br> A food you are not going to compare with
                 another</p>
               <div class="inner">
-                <i class="fa-solid fa-naira-sign">2, 500</i>
-                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fa-solid fa-naira-sign" id="price2">2500</i>
+                <i class="fa-solid fa-cart-plus" id="calculateRice2"></i>
               </div>
             </div>
           </div>
@@ -549,8 +551,8 @@
               <p>Dont miss the blessed taste of our Fried Rice <br> A food you are not going to compare with
                 another</p>
               <div class="inner">
-                <i class="fa-solid fa-naira-sign">2, 500</i>
-                <i class="fa-solid fa-cart-plus"></i>
+                <i class="fa-solid fa-naira-sign" id="price3">2500</i>
+                <i class="fa-solid fa-cart-plus" id="calculateRice3"></i>
               </div>
             </div>
           </div>
@@ -684,7 +686,7 @@
       <!-- bookingHeader -->
       <h2 class="bookingHeader">Reserve A Table Now</h2>
       <div class="formBookingTable">
-        <form action="mailto:lahotfastfood@gmail.com" method="post">
+        <form action="mailto:lahotfastfood@gmail.com" method="post" autocomplete="on">
           <!-- for name input field -->
           <div class="nameFied">
             <label for="YourName"></label>
@@ -870,37 +872,39 @@
           </p>
         </div>
       </div>
-         <!-- For the Social Media Icons -->
-         <div class="socilaMediaContacts">
-          <!-- LiinkedIn icon-->
-          <a href="http://www.linkedin.com/in/onyia-miracle-b582b4237/"><i class="fa-brands fa-linkedin-in"></i></a>
-          <!-- for facebook icon-->
-          <i class="fa-brands fa-facebook-f"></i>
-          <!-- for Instagram icon-->
-          <i class="fa-brands fa-instagram"></i>
-          <!-- for pinterest icon -->
-          <i class="fa-brands fa-pinterest-p"></i>
-          <!-- for twitter icon -->
-          <i class="fa-brands fa-x-twitter"></i>
-        </div>
+      <!-- For the Social Media Icons -->
+      <div class="socilaMediaContacts">
+        <!-- LiinkedIn icon-->
+        <a href="http://www.linkedin.com/in/onyia-miracle-b582b4237/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <!-- for facebook icon-->
+        <i class="fa-brands fa-facebook-f"></i>
+        <!-- for Instagram icon-->
+        <i class="fa-brands fa-instagram"></i>
+        <!-- for pinterest icon -->
+        <i class="fa-brands fa-pinterest-p"></i>
+        <!-- for twitter icon -->
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
 
-        <!-- For the Last Message Down -->
-        <div class="Rights">
-         <p> &COPY; 2023 All Rights Reserved By <a href="http://github.com/MiracleChibuike" target="_blank" > Miracle-Tech Coding Projects</a> </p>
-         <p>&COPY; Distributed By <a href="http://github.com/MiracleChibuike">Miracle Chibuike</a></p>
-         <!-- Adding Google Translate Page -->
-           <!-- Adding a google translate API -->
-           <p>You can translate the content of this page below</p>
-           <div id="google_translate_element"></div>
+      <!-- For the Last Message Down -->
+      <div class="Rights">
+        <p> &COPY; 2023 All Rights Reserved By <a href="http://github.com/MiracleChibuike" target="_blank"> Miracle-Tech
+            Coding Projects</a> </p>
+        <p>&COPY; Distributed By <a href="http://github.com/MiracleChibuike">Miracle Chibuike</a></p>
+        <!-- Adding Google Translate Page -->
+        <!-- Adding a google translate API -->
+        <p>You can translate the content of this page below</p>
+        <div id="google_translate_element"></div>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+          }
+        </script>
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </div>
+        <script type="text/javascript"
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
     </section>
 
   </div>

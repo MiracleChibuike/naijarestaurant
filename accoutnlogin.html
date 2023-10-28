@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login || La-Hot</title>
+    <!-- google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Kanit&family=Noto+Sans+Display:wght@600&family=PT+Sans+Narrow&family=Slabo+27px&family=Ubuntu:wght@500&display=swap');
+      </style>
+      <!-- custom css -->
+      <link rel="stylesheet" href="css/accountlogin.css">
+</head>
+<body>
+    <!-- main - container -->
+    <div class="main">
+        <div class="card">
+            <div class="cardFront">
+                <h2 class="formtitle">Register</h2>
+            <div class="formcontainer">
+                <form action="index.html" method="get" autocomplete="on">
+                    <div class="nameInput">
+                        <label for="name"></label>
+                        <input type="text"  id="name" placeholder="Your Name" autocapitalize="name" autocomplete="name" required>
+                    </div>
+                    <div class="emailInput">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Your Email" autocapitalize="email" autocomplete="email" required>
+                    </div>
+                    <div class="passwordInput">
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Your Password" autocomplete="new-password" required>
+                        <i class="fa-solid fa-lock" id="lockKey"></i>
+                        <i class="fa-solid fa-unlock-keyhole" id="openKey"></i>
+                    </div>
+                    <div class="submitBtnContainer">
+                        <label for="submitBtn"></label>
+                        <button type="submit" id="submitBtn">
+                            Submit
+                        </button>
+                        <p>
+                            <i class="fa-solid fa-circle-chevron-right enterKey"></i>
+                        </p>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox"  id="rememberMe">
+                        <p class="rememberText">Remeber Me</p>
+                    </div>
+    
+                </form>
+                                <!-- for a client that already has an account -->
+    
+                <div class="accountCreated">
+                    <button id="registredUser">
+                        I've an account
+                    </button>
+                    <p>
+                        <a href="">Forgot Password</a>
+                    </p>
+                </div>
+            </div>
+                
+            </div>
+            <!-- for login - container card back -->
+            <div class="cardBack">
+                <h2 class="formtitle">Log In</h2>
+            <div class="formcontainer">
+                <form action="index.html" method="get">
+                    <!-- <div class="nameInput">
+                        <label for="name"></label>
+                        <input type="text"  id="name" placeholder="Your Name" autocapitalize="name" autocomplete="name" required>
+                    </div> -->
+                    <div class="emailInput">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Your Email ID" autocapitalize="email" autocomplete="email" required>
+                    </div>
+                    <div class="passwordInput">
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Your Password" autocomplete="new-password" required>
+                        <i class="fa-solid fa-lock" id="lockKey"></i>
+                        <i class="fa-solid fa-unlock-keyhole" id="openKey"></i>
+                    </div>
+                    <div class="submitBtnContainer">
+                        <label for="submitBtn"></label>
+                        <button type="submit" id="submitBtn">
+                            Submit
+                        </button>
+                        <p>
+                            <i class="fa-solid fa-circle-chevron-right enterKey"></i>
+                        </p>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox"  id="rememberMe">
+                        <p class="rememberText">Remeber Me</p>
+                    </div>
+    
+                </form>
+                                <!-- for a client that already has an account -->
+    
+                <div class="accountCreated">
+                    <button id="registredUser-CardBack">
+                        I'm new here
+                    </button>
+                    <p>
+                        <a href="">Forgot Password</a>
+                    </p>
+                </div>
+            </div>
+                
+            </div>
+
+        </div>
+        
+        
+    </div>
+    <!-- font-awesome kit -->
+    <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/accountlogin.js"></script>
+</body>
+</html>

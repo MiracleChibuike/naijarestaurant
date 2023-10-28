@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Display', sans-serif;
+
+}
+
+:root {
+    --primary-color: #fff;
+    --secondary-white: rgb(195, 195, 197);
+    --main-black-color: #020202;
+    --transparent-blue-color: rgb(30, 20, 180);
+    --secondary-gray: rgb(219, 224, 225);
+    --orange: #ffa500;
+}
+
+body {
+    background: var(--secondary-gray);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.main {
+    height: 550px;
+    width: 350px;
+    text-align: center;
+    color: var(--primary-color);
+    box-shadow: 0 0 25px rgb(11, 11, 11);
+    padding: 10px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    transition: transform 2s;
+}
+.card {
+    box-shadow: 0 0 25px rgb(11, 11, 11);
+    height: 550px;
+    perspective: 1000px;
+}
+
+.cardFront,
+.cardBack {
+    background: linear-gradient(rgba(0, 0, 100, 0.8), rgba(0, 0, 100, 0.8)), url(../images/egusi\ 2.png) no-repeat center center/cover;
+    height: 550px;
+}
+.cardFront{
+    animation-name: rotates;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes rotates {
+    0%{
+        transform: 0;
+    }
+    55%{
+        transform: rotateY(180deg);
+        transition: all .8s;
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+.formtitle {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+#password,
+#name,
+#email {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-white);
+    outline: none;
+    background: transparent;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+#password:hover,
+#name:hover,
+#email:hover {
+    border: 2px solid var(--orange);
+    transform: scale(1.0, 1.1);
+    transition: all .8s;
+    cursor: pointer;
+}
+
+#lockKey,
+#openKey {
+    position: relative;
+    bottom: 45px;
+    left: -130px;
+    font-size: 20px;
+}
+
+#openKey {
+    display: none;
+}
+
+#submitBtn {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-white);
+    outline: none;
+    background: transparent;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+#submitBtn:hover {
+    background: var(--orange);
+    transform: scale(0.9, 1.0);
+    transition: all .8s;
+    cursor: grab;
+    border: none;
+}
+
+.enterKey {
+    font-size: 25px;
+    color: var(--main-black-color);
+    background: var(--primary-color);
+    position: relative;
+    bottom: 58px;
+    left: 140px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+::placeholder {
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.remember {
+    display: flex;
+    margin-left: 15px;
+    position: relative;
+    bottom: 50px;
+}
+
+#rememberMe {
+    height: 18px;
+    width: 30px;
+    border: 2px solid var(--orange);
+    outline: none;
+    background: transparent;
+}
+
+.accountCreated a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#registredUser {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-white);
+    outline: none;
+    background: transparent;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+#registredUser:hover {
+    background: var(--orange);
+    transform: translateY(-10px);
+    transition: all .8s;
+    cursor: grab;
+    border: none;
+}
+
+/* for cardback styling */
+.cardBack {
+    display: none;
+    transition:  all .8s;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes rotate {
+    0%{
+        transform: 0;
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+ 
+    }
+}
+
+#registredUser-CardBack {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    outline: none;
+    background: var(--orange);
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+#registredUser-CardBack:hover {
+    background: transparent;
+    transform: translateY(-10px);
+    transition: all .8s;
+    cursor: zoom-in;
+    border: 2px solid var(--primary-color);
+}
