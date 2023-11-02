@@ -1019,6 +1019,22 @@ body {
     .nav-links ul li a {
         display: block;
         text-align: center;
+        animation-name: anchorAnimate;
+        animation-iteration-count: 1;
+        animation-duration: 5s;
+    }
+    @keyframes anchorAnimate {
+        0%{
+            transform: scale(0);
+        }
+        25%, 50%{
+            transform: scale(1.0, 1.1);
+            transition: all .5s ease-in-out;
+        }
+        75%, 100%{
+            transform: scale(0.9, 1.1);
+            transition: all .5s ease-in-out;
+        }
     }
 
     .nav-links ul li a:hover {
