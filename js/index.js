@@ -20,14 +20,14 @@ rice1.addEventListener("click", function CalculateRicePriceAll (){
 const closeNavs = document.getElementById("closeNavs")
 const openNavs = document.getElementById("openNavs");
 let navLinksContainer = document.querySelector(".nav-links")
-let userName = document.querySelector(".userNameContainer")
+// let userName = document.querySelector(".userNameContainer")
 openNavs.addEventListener("click", function OpenNavsLinks() {
     // alert("I got clicked")
     if (navLinksContainer.style.display = "none") {
         navLinksContainer.style.display = "block"
         openNavs.style.display = "none"
         closeNavs.style.display = "block"
-        console.log(userName)
+        // console.log(userName)
     }
 })
 // for closing the nav-links
