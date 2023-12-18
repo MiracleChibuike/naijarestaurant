@@ -29,7 +29,7 @@
   <!-- Main Container -->
   <div class="container-main">
     <!-- for menu section -->
-    <div class="menu">
+    <div class="menu" onclick="closeOrderBox()">
       <h2 class="logo">La-Hot</h2>
       <!-- code for navbarIcon  -->
       <div class="navButtons">
@@ -65,6 +65,112 @@
       <div class="imageContainerBg">
         <img src="images/bg2.png" alt="" class="backgroundImg">
       </div>
+      <!-- For the Order Online Container -->
+      <div class="makeOrder">
+        <div class="innerContentsForm">
+          <h2 class="head">La-hot Order Form <br> Free and fast</h2>
+          <form action="" id="order" autocomplete="on">
+            <!-- for name container -->
+            <div class="orderName">
+              <label for="name-food" class="labels">Name:</label> <br>
+                <input type="text" autocomplete="family-name" placeholder="First" id="name-food" required>
+              <input type="text" autocomplete="name" placeholder="Last" id="name-food" required>
+            </div>
+            <!-- For Purchaser's Email Container -->
+            <div class="purchaseEmail">
+              <label for="purchaser-email" class="labels">Purchaser's Email</label> <br>
+              <input type="email" autocomplete="email" placeholder="Your Email" id="purchaser-email" required>
+            </div>
+            <!-- For delievery phone  container  -->
+            <div class="phoneOrder">
+              <label for="delievery-phone" class="labels">Your Phone:</label> <br>
+              <input type="tel" autocomplete="tel" id="delievery-phone" placeholder="+234 XXX XXX XX" required>
+            </div>
+            <!-- for delivery address container -->
+            <div class="delievryAddress">
+              <label for="delievery-address" class="labels">Delivery Address:</label> <br>
+              <input type="text" autocomplete="address-line1" id="delievery-address" placeholder="Street Address" required> <br>
+              <input type="text" autocomplete="address-line2" id="delievery-address" placeholder="Street Address Line 2">
+            </div>
+            <div class="cityAddress">
+              <input type="text" autocomplete="street-address" id="city-order" placeholder="City" required>
+              <input type="text" autocomplete="state" id="city-order" placeholder="Region/State">
+            </div>
+            <div class="postalcode">
+              <input type="text" autocomplete="postal-code" id="zip-code" placeholder="Postal/Zip Code">
+              <input list="Country-order" placeholder="Country" id="zip-code" required />
+              <datalist id="Country-order">
+                <option value="Nigeria "></option>
+                <option value="USA "></option>
+                <option value="Canada "></option>
+                <option value="Switzerland"></option>
+                <option value="Denmark"></option>
+                <option value="UK"></option>
+                <option value="Other"></option>
+              </datalist>
+            </div>
+
+          
+          <!-- For the foods in ordering -->
+          <div class="foodNamestoOrder">
+            <div class="food-1Order">
+              <input type="checkbox" name="" id="">
+              <img src="images/okro soup main.png" alt="" class="okro-order-food">
+             <div class="orderTexts">
+              <p>Okro Soup</p>
+              <p><i class="fa-solid fa-naira-sign">2, 500</i></p>
+              <p>
+                <label for="QuantityOf-Foods">Quantity</label> <br>
+                <input type="number">
+              </p>
+             </div>
+            </div>
+            <!-- Food order 2 -->
+            <div class="food-2Order">
+              <input type="checkbox" name="" id="">
+              <img src="images/egusi 2.png" alt="" class="okro-order-food">
+              <div class="orderTexts">
+                <p>Egusi Soup</p>
+                <p><i class="fa-solid fa-naira-sign">3, 500</i></p>
+                <p>
+                  <label for="QuantityOf-Foods">Quantity</label> <br>
+                  <input type="number">
+                </p>
+              </div>
+            </div>
+            <!-- Food order 3 -->
+            <div class="food-3Order">
+              <input type="checkbox" name="" id="">
+              <img src="images/egg sauce 3.png" alt="" class="okro-order-food">
+             <div class="orderTexts">
+              <p>Egg Sauce</p>
+              <p><i class="fa-solid fa-naira-sign">5, 000</i></p>
+              <p>
+                <label for="QuantityOf-Foods">Quantity</label> <br>
+                <input type="number">
+              </p>
+             </div>
+            </div>
+              <!-- Food order 4 -->
+              <div class="food-4Order">
+                <input type="checkbox" name="" id="">
+                <img src="images/fried rice 2.png" alt="" class="okro-order-food">
+              <div class="orderTexts">
+                  <p>Fried Rice</p>
+                  <p><i class="fa-solid fa-naira-sign">2, 500</i></p>
+                  <p>
+                    <label for="QuantityOf-Foods">Quantity</label> <br>
+                    <input type="number" placeholder="Quantity of food">
+                  </p>
+              </div>
+              </div>
+          </div>
+          <div class="sub">
+            <button type="submit" class="submit">Make Order</button>
+          </div>
+          </form>
+        </div>
+      </div>
       <!-- carousel -->
       <div class="carouselContainer">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -85,7 +191,7 @@
                 This is a place to call your home. <br> As a Nigerian based reaturant, we are happy to let you taste the
                 sweet aroma of our food.
               </p>
-              <button class="orderBtn" onclick="MessageToIndividual()">
+              <button class="orderBtn" >
                 Order Online
               </button>
             </div>
@@ -97,7 +203,7 @@
                 This is a place to call your home. <br> As a Nigerian based reaturant, we are happy to let you taste the
                 sweet aroma of our food.
               </p>
-              <button class="orderBtn" onclick="MessageToIndividual()">
+              <button class="orderBtn" >
                 Order Online
               </button>
             </div>
@@ -109,7 +215,7 @@
                 This is a place to call your home. <br> As a Nigerian based reaturant, we are happy to let you taste the
                 sweet aroma of our food.
               </p>
-              <button class="orderBtn" onclick="MessageToIndividual()">
+              <button class="orderBtn" >
                 Order Online
               </button>
             </div>
@@ -120,7 +226,7 @@
 
     <!-- Our Menu Section -->
 
-    <section id="menu">
+    <section id="menu" onclick="closeOrderBox()">
       <h2 class="titleHeadre">Our Menu</h2>
       <div class="foodsContent">
         <button id="forAllFoods">All</button>
@@ -682,7 +788,7 @@
     </section>
 
     <!-- Book A Table Section -->
-    <section id="bookTable">
+    <section id="bookTable" onclick="closeOrderBox()">
       <!-- bookingHeader -->
       <h2 class="bookingHeader">Reserve A Table Now</h2>
       <div class="formBookingTable">
@@ -690,7 +796,7 @@
           <!-- for name input field -->
           <div class="nameFied">
             <label for="YourName"></label>
-            <input type="text" id="YourName" placeholder="Your Name" autocomplete="name" autofocus autocapitalize="name"
+            <input type="text" id="YourName" placeholder="Your Name" autocomplete="name"  autocapitalize="name"
               required>
           </div>
           <!-- for phone number input field -->

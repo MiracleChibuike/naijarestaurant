@@ -14,7 +14,8 @@
     --orange-main: #ffa500;
     --white-main-color: #fff;
     --gray-semi: rgb(200, 200, 200, 0.732);
-
+    --light-gray-order: #989797d0;
+    --orange-second: #c08d30;
 }
 
 body {
@@ -188,7 +189,6 @@ body {
     background-color: var(--light-dark);
     position: relative;
     top: 50px;
-
 }
 
 .imageContainerBg {
@@ -200,8 +200,146 @@ body {
     position: relative;
     top: 200px;
 }
+/* For making order-form */
+.makeOrder{
+    /* display: grid;
+    place-content: center; */
+    display: none;
+    width: 700px;
+    /* min-height: 100vh; */
+    position: absolute;
+     left: 120px;
+    top: 30px;
+    bottom: 40px;
+    z-index: 100;
+    color: var(--white-main-color);
+    padding: 10px;
+    background: var(--main-dark-primary);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(21, 21, 21);
+    overflow-y: scroll;
+    height: 800px;
+    animation-name: orderAnimate;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+@keyframes orderAnimate {
+    0%{
+        transform: scale(0);
+        transition: .5s ease-in-out;
+    }
+    25%, 50%, 100%{
+        transform: scale(1.0, 1.0);
+            transition: .5s ease-in-out;
+    }
+}
+.innerContentsForm{
+   margin: 20px 0;
+}
+.head{
+    text-align: center;
+}
+.orderName, .purchaseEmail, .phoneOrder, .delievryAddress{
+    margin: 10px;
+}
+#name-food{
+    padding: 8px;
+    outline: none;
+    width: 300px;
+    background-color: transparent;
+    border: 1px solid var(--white-main-color);
+    color: var(--white-main-color);
+    margin: 0 5px;
+    border-radius: 8px;
+}
+#delievery-phone, #purchaser-email{
+    padding: 8px;
+        outline: none;
+        width: 613px;
+        background-color: transparent;
+        border: 1px solid var(--white-main-color);
+        color: var(--white-main-color);
+        margin: 0 5px;
+        border-radius: 8px;
+}
+#delievery-address{
+    padding: 8px;
+        outline: none;
+        width: 613px;
+        background-color: transparent;
+        border: 1px solid var(--white-main-color);
+        color: var(--white-main-color);
+        margin: 5px;
+        border-radius: 8px;
+}
+#city-order, #zip-code{
+    padding: 8px;
+        outline: none;
+        width: 300px;
+        background-color: transparent;
+        border: 1px solid var(--white-main-color);
+        color: var(--white-main-color);
+        margin: 5px;
+        border-radius: 8px;
+}
+#name-food > ::placeholder{
+    color: var(--white-main-color);
+}
+.labels{
+    margin: 10px;
+    font-size: 1.2rem;
+}
+.sub{
+    text-align: center;
+    margin: 15px 0;
+}
+.submit{
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--orange-main);
+    color: var(--white-main-color);
+    border: none;
+}
+/* For the foods in ordering section */
+.foodNamestoOrder{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr)
+}
+.foodNamestoOrder input{
+    text-align: center;
+}
 
-
+.food-1Order, .food-2Order, .food-3Order, .food-4Order{
+    display: flex;
+    background: var(--white-main-color);
+    color: var(--main-dark-primary);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+} 
+.food-1Order input,
+.food-2Order input,
+.food-3Order input,
+.food-4Order input{
+    border: 2px solid var(--main-dark-primary);
+    outline: none;
+}
+.food-1Order img, .food-2Order img, .food-3Order img, .food-4Order img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 8px;
+    border-radius: 50%;
+    border: 4px solid var(--orange-main);
+}
+.food-1Order label, .food-2Order label, .food-3Order label,.food-4Order label {
+    margin: 5px 0;
+}
+.orderTexts{
+    margin: 10px;
+    position: relative;
+    left: 15px;
+}
 .carousel {
     color: var(--white-main-color);
 }
@@ -798,7 +936,7 @@ body {
     cursor: pointer;
 }
 
-::placeholder {
+input ::placeholder {
     color: var(--main-dark-primary);
 }
 
@@ -1072,6 +1210,48 @@ body {
     #home {
         min-height: 100vh;
     }
+    /* For making order */
+        .makeOrder{
+            /* display: grid;
+                place-content: center; */
+                display: none;
+                width: 300px;
+                /* min-height: 100vh; */
+                position: absolute;
+                top: 30px;
+                bottom: 40px;
+                left: 50px;
+        }
+                #name-food {
+                    width: 250px;
+                    margin: 7px ;
+                }
+        
+                #delievery-phone,
+                #purchaser-email {
+                    width: 250px;
+                }
+        
+                #delievery-address {
+                    width: 250px;
+                }
+                                #city-order,
+                                #zip-code{
+                                    width: 250px;
+                                }
+                                                                .food-1Order,
+                                                                .food-2Order,
+                                                                .food-3Order,
+                                                                .food-4Order{
+                                                                    display: block;
+                                                                }
+                                .food-1Order img,
+                                .food-2Order img,
+                                .food-3Order img,
+                                .food-4Order img {
+                                    width: 100px;
+                                    height: 100px;
+                                }
 
     .backgroundImg {
         max-height: 300px;
@@ -1308,6 +1488,52 @@ body {
     #home {
         min-height: 60vh;
     }
+    /* For making order */
+                .makeOrder {
+                    /* display: grid;
+                        place-content: center; */
+                    display: block;
+                    width: 500px;
+                    /* min-height: 100vh; */
+                    position: absolute;
+                    top: 30px;
+                    bottom: 40px;
+                    left: 130px;
+                }
+        
+                #name-food {
+                    width: 200px;
+                    margin: 10px 5px;
+                }
+        
+                #delievery-phone,
+                #purchaser-email {
+                    width: 400px;
+                }
+        
+                #delievery-address {
+                    width: 400px;
+                }
+        
+                #city-order,
+                #zip-code {
+                    width: 200px;
+                }
+        
+                .food-1Order,
+                .food-2Order,
+                .food-3Order,
+                .food-4Order {
+                    display: flex;
+                }
+        
+                .food-1Order img,
+                .food-2Order img,
+                .food-3Order img,
+                .food-4Order img {
+                    width: 100px;
+                    height: 100px;
+                }
 
     .backgroundImg {
         max-height: 300px;

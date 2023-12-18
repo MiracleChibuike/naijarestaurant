@@ -81,9 +81,29 @@ BookTableNav.addEventListener("click", function () {
 
 // For Oredering online//
 // This button is going to return a message of order of conformation when clicked
-let orderAction = document.querySelectorAll(".orderBtn");
-function MessageToIndividual() {
-    alert("We recieved Your Order - Thanks For Your Patronage")
+// function MessageToIndividual() {
+//     let make_Order_Box = document.querySelector(".makeOrder")
+//     console.log(make_Order_Box)
+//     alert("We recieved Your Order - Thanks For Your Patronage")
+// }
+let orderAction = document.querySelectorAll(".orderBtn").length;
+for (let i = 0; i < orderAction; i++) {
+    document.querySelectorAll(".orderBtn")[i].addEventListener("click", function () {
+        let make_Order_Box = document.querySelector(".makeOrder")
+    console.log(make_Order_Box);
+    if (make_Order_Box.style.display = "none") {
+        make_Order_Box.style.display = "block"
+    }
+    // alert("We recieved Your Order - Thanks For Your Patronage")
+    })
+    
+}
+function closeOrderBox() {
+         let make_Order_Box = document.querySelector(".makeOrder")
+    console.log(make_Order_Box);
+    if (make_Order_Box.style.display = "block") {
+        make_Order_Box.style.display = "none"
+    }
 }
 
 // This code is going to be responsible for hiding and closing the foods
