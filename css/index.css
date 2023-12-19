@@ -208,7 +208,7 @@ body {
     width: 700px;
     /* min-height: 100vh; */
     position: absolute;
-     left: 400px;
+     left: 120px;
     top: 30px;
     bottom: 40px;
     z-index: 100;
@@ -1215,29 +1215,29 @@ input ::placeholder {
             /* display: grid;
                 place-content: center; */
                 display: none;
-                width: 300px;
+                width: 350px;
                 /* min-height: 100vh; */
                 position: absolute;
                 top: 30px;
                 bottom: 40px;
-                left: 50px;
+                left: 20px;
         }
                 #name-food {
-                    width: 250px;
+                    width: 300px;
                     margin: 7px ;
                 }
         
                 #delievery-phone,
                 #purchaser-email {
-                    width: 250px;
+                    width: 300px;
                 }
         
                 #delievery-address {
-                    width: 250px;
+                    width: 300px;
                 }
                                 #city-order,
                                 #zip-code{
-                                    width: 250px;
+                                    width: 310px;
                                 }
                                                                 .food-1Order,
                                                                 .food-2Order,
