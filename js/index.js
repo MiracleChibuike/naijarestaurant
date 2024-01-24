@@ -1,4 +1,26 @@
 
+
+// Our Animation loading
+
+function loadAnim() {
+  var loader = document.querySelector(".loader");
+  var loaderText = document.getElementById("spanText");
+  var mainContent = document.querySelector(".container-main");
+
+  // Show loader initially
+  loader.style.display = "block";
+
+  // After 7 seconds, hide the loader and show the main container
+  setTimeout(function () {
+    loader.style.display = "none";
+    loaderText.style.display = "none"
+    mainContent.style.display = "block";
+  }, 7000);
+}
+
+// Call the loadAnim function when your page is ready
+document.addEventListener("DOMContentLoaded", loadAnim);
+
 // For calculating the prices of all Fried Rice altogether
 const rice1 = document.getElementById("calculateRice1");
 const rice2 = document.getElementById("calculateRice2");
