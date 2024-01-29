@@ -244,7 +244,7 @@ header span{
     /* min-height: 100vh; */
     position: absolute;
      left: 120px;
-    top: 30px;
+    top: 50px;
     bottom: 40px;
     z-index: 100;
     color: var(--white-main-color);
@@ -273,6 +273,26 @@ header span{
 }
 .head{
     text-align: center;
+}
+.close{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+#closeOrderForm{
+    width: 45px;
+    height: 45px;
+    color: var(--orange-main);
+    /* background: var(--orange-main); */
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 10px;
+        border: 2px solid var(--orange-main);
+}
+#closeOrderForm:hover{
+    cursor: pointer;
+    border: 2px solid var(--light-gray-order);
+    /* padding: 8px 10px; */
 }
 .orderName, .purchaseEmail, .phoneOrder, .delievryAddress{
     margin: 10px;
@@ -1280,11 +1300,16 @@ input ::placeholder {
                 width: 350px;
                 /* min-height: 100vh; */
                 position: absolute;
-                top: 30px;
+                top: 40px;
                 bottom: 40px;
                 left: 15px;
                 overflow-x: hidden;
         }
+                #closeOrderForm{
+                    position: relative;
+                    bottom: 30px;
+                    left: 10px;
+                }
                 #name-food {
                     width: 300px;
                     margin: 7px ;

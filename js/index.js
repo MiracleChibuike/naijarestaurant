@@ -21,6 +21,10 @@ function loadAnim() {
 // Call the loadAnim function when your page is ready
 document.addEventListener("DOMContentLoaded", loadAnim);
 
+
+// Close the form order
+
+
 // For calculating the prices of all Fried Rice altogether
 const rice1 = document.getElementById("calculateRice1");
 const rice2 = document.getElementById("calculateRice2");
@@ -128,6 +132,11 @@ function closeOrderBox() {
     }
 }
 
+var closeOrderBTN = document.getElementById("closeOrderForm");
+closeOrderBTN.addEventListener("click", ()=>{
+     let make_Order_Box = document.querySelector(".makeOrder");
+    make_Order_Box.style.display = "none";
+})
 // This code is going to be responsible for hiding and closing the foods
 let cardFoodsExempt = document.querySelector(".cardsforFood")
 let foodContainerAll = document.getElementById("forAllFoods");
