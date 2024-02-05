@@ -171,6 +171,24 @@ header span{
 .nav-linksSecondary ul li .Active-Link:hover {
     text-decoration: none;
 }
+
+#register:hover{
+    border: 2px solid var(--light-white);
+    background: var(--light-white);
+    color: var(--main-dark-primary);
+    /* font-weight: bold; */
+    text-decoration: underline;
+    transition: .5s ease;
+    padding: 7px 12px;
+}
+#register{
+    padding: 5px 10px;
+    background: transparent;
+    border: 2px solid var(--orange-main);
+    color: var(--white-main-color);
+        border-radius: 8px;
+
+}
 /* NavLinks Secondary */
 
 .navButtons {
